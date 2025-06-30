@@ -1,0 +1,155 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'JetBrains Mono';
+  font-size: 16px;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  min-width: 340px;
+}
+main {
+  max-width: 720px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1 0 auto;
+  box-sizing: border-box;
+  padding: 0 24px;
+}
+:root {
+  --color-bg: #101010;
+  --color-text: #E0E0E0;
+  --color-blue: #74A9CF;
+  --color-muted: #B0B0B0;
+  --color-border: #303030;
+}
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  width: 100%;
+  line-height: inherit;
+}
+h1::before {
+  content: "#";
+  color: #505050;
+  font-weight: normal;
+  margin-right: 8px;
+}
+h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+h2::before {
+  content: "##";
+  color: #505050;
+  font-weight: normal;
+  margin-right: 8px;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+ul li {
+  color: var(--color-muted);
+  font-size: 1em;
+}
+ul li b {
+  color: #E0E0E0;
+  font-weight: bold;
+}
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  text-decoration: underline;
+  filter: brightness(1.15);
+}
+.bricks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.brick-card {
+  font-size: 14px;
+  padding: 6px 10px;
+  background: #181818;
+  border: 1px solid #303030;
+  border-radius: 5px;
+  color: var(--color-muted);
+  font-family: inherit;
+  margin: 0;
+  width: fit-content;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+.brick-card.accent {
+  color: #A2D6F9 !important;
+  background: #223044 !important;
+  border: 1.5px solid #74A9CF !important;
+}
+
+.brick-card.accent:hover, .brick-card.accent:focus {
+  color: #fff !important;
+  background: #2a3a4a !important;
+  border-color: #A2D6F9 !important;
+}
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  font-family: inherit;
+  font-size: 1em;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
+.tools-list b {
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.site-footer {
+  text-align: center;
+  color: #505050;
+  font-size: 14px;
+  font-family: inherit;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 24px 0;
+  letter-spacing: 0.03em;
+  user-select: none;
+  flex-shrink: 0;
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+}
+hr {
+  border: none;
+  border-top: 1px solid #303030;
+  margin: 20px auto 0 auto;
+  max-width: 720px;
+  width: 100%;
+}
